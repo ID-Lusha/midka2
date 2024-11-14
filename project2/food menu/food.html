@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles_food.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍲 Recipe Finder</h1>
+            <p>Find the best recipes by ingredients or dish name</p>
+            <div class="header-buttons">
+                <a href="favorites.html" class="nav-link">Favorites</a>
+            </div>
+        </header>
+        <input type="text" id="searchInput" placeholder="Enter ingredients or dish name" autocomplete="off">
+        <div id="suggestions"></div>
+        <section id="recipes" class="grid"></section>
+    </div>
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="recipeDetails"></div>
+        </div>
+    </div>
+
+    <script src="script_food.js"></script>
+</body>
+</html>
